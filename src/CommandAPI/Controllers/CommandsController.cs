@@ -25,7 +25,7 @@ namespace CommandAPI.CommandsController
         [HttpGet("{id}")]
         public ActionResult<Command> GetCommandById(int id)
         {
-            var commandItem = _repository.GetCommandById(id);
+            var commandItem = _commandAPIRepo.GetCommandById(id);
             if (commandItem == null)
             {
                 return NotFound();
