@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 namespace CommandAPI.CommandsController
 {
-    [Route("api/Command")]
+    [Route("api/Commands")]
     public class CommandsController : ControllerBase
     {
         [HttpGet]
